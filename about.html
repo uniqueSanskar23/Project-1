@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Hello, World!</title>
+  <style>
+    :root { color-scheme: dark; --ink: #eef2ff; --muted: #bac5e4; --cyan: #62e7ff; }
+    * { box-sizing: border-box; }
+    body { min-height: 100vh; margin: 0; padding: 6.5rem 1.25rem 2rem; color: var(--ink); font-family: Inter, system-ui, sans-serif; background: #0b1020; }
+    body::before { content: ""; position: fixed; z-index: -1; top: -14rem; right: -12rem; width: 35rem; aspect-ratio: 1; border-radius: 50%; opacity: .3; filter: blur(15px); background: #6148ff; }
+    nav { position: fixed; top: 1.25rem; left: 50%; display: flex; gap: .35rem; padding: .35rem; border: 1px solid rgba(255,255,255,.14); border-radius: 999px; background: rgba(11,16,32,.7); backdrop-filter: blur(14px); transform: translateX(-50%); }
+    nav a { padding: .55rem .9rem; border-radius: 999px; color: var(--muted); font-size: .9rem; font-weight: 700; text-decoration: none; } nav a:hover, nav a[aria-current="page"] { color: var(--ink); background: rgba(255,255,255,.12); }
+    main { width: min(100%, 860px); margin: 0 auto; padding: clamp(2rem,6vw,4.5rem); border: 1px solid rgba(255,255,255,.16); border-radius: 28px; background: linear-gradient(135deg,rgba(255,255,255,.12),rgba(255,255,255,.04)); box-shadow: 0 24px 80px rgba(0,0,0,.35); backdrop-filter: blur(20px); }
+    .eyebrow { margin: 0 0 .8rem; color: var(--cyan); font-size: .78rem; font-weight: 800; letter-spacing: .18em; text-transform: uppercase; } h1 { margin: 0; font-size: clamp(2.8rem,8vw,5.5rem); letter-spacing: -.06em; line-height: 1; } .lead { max-width: 42rem; color: var(--muted); font-size: 1.18rem; line-height: 1.7; }
+    .cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 2.4rem; } .card { padding: 1.2rem; border: 1px solid rgba(255,255,255,.12); border-radius: 18px; background: rgba(7,12,29,.28); } .card strong { display: block; margin-bottom: .35rem; color: var(--cyan); font-size: 1.5rem; } .card span { color: var(--muted); line-height: 1.45; } @media(max-width:600px) { .cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html" aria-current="page">About</a><a href="contact.html">Contact</a></nav>
+  <main>
+    <p class="eyebrow">Our story</p>
+    <h1>Built with a little curiosity.</h1>
+    <p class="lead">This tiny site is a starting point for big ideas. It is designed to feel welcoming, move lightly, and give your next project a confident first home.</p>
+    <section class="cards" aria-label="Values">
+      <article class="card"><strong>01</strong><span>Keep things clear, useful, and delightfully simple.</span></article>
+      <article class="card"><strong>02</strong><span>Make every screen feel considered, from phone to desktop.</span></article>
+      <article class="card"><strong>03</strong><span>Leave plenty of room for your own ideas to grow.</span></article>
+    </section>
+  </main>
+</body>
+</html>
