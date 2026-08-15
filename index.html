@@ -82,6 +82,9 @@
 
       .sparkles { margin-top: 2.2rem; font-size: 1.6rem; letter-spacing: .5rem; }
 
+      .author { display: inline-flex; align-items: center; gap: .5rem; margin-top: 2rem; padding: .5rem .85rem; border: 1px solid rgba(98,231,255,.35); border-radius: 999px; color: var(--cyan); font-size: .78rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; background: rgba(98,231,255,.08); box-shadow: 0 0 22px rgba(98,231,255,.1); }
+      .author::before { content: "✦"; color: var(--violet); }
+
       @keyframes arrive {
         from { opacity: 0; transform: translateY(20px) scale(.97); }
         to { opacity: 1; transform: translateY(0) scale(1); }
@@ -104,6 +107,7 @@
       <h1>Hello, World!</h1>
       <p>Your first page is live: clean, responsive, and ready for whatever you build next.</p>
       <div class="sparkles" aria-label="sparkles">✦ ✧ ✦</div>
+      <div class="author">Author · Sanskar D. Patil</div>
       <nav aria-label="Main navigation">
   <a href="index.html">Home</a>
   <a href="about.html">About</a>
