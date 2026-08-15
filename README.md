@@ -15,7 +15,7 @@ A simple responsive website made with HTML and CSS.
 
 ## Live Demo
 
-[Open the website](https://your-project.netlify.app)
+[Open the website](https://hello-about-contact-page.netlify.app/)
 
 ## How to Run
 
